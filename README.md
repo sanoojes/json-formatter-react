@@ -1,30 +1,52 @@
-# React + TypeScript + Vite
+## Simple JSON Formatter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A minimal, user-friendly JSON formatter built with TypeScript, Shadcn UI, and Tailwind CSS.
 
-Currently, two official plugins are available:
+This project provides a straightforward way to format and prettify your JSON data directly in the browser. Simply paste your JSON into the input area, and the formatter will instantly display a clean, indented version of your data.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Features
 
-## Expanding the ESLint configuration
+- **Clean and Intuitive UI:** Leverages the elegance of Shadcn UI components for a visually appealing and easy-to-use interface.
+- **Instant Formatting:** Experience real-time JSON formatting as you type or paste your data.
+- **Copy to Clipboard:** Easily copy the formatted JSON with a single click for convenient sharing or use in other applications.
+- **Lightweight and Performant:** Built with a focus on minimal dependencies and optimized for fast performance.
+- **TypeScript Support:** Enjoy the benefits of type safety and enhanced code maintainability.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Getting Started
 
-- Configure the top-level `parserOptions` property like this:
+#### 1. Clone the repository:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+git clone https://github.com/sanoojes/json-formatter-react.git
+cd json-formatter-react
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+#### 2. Install dependencies:
+
+```bash
+npm install
+```
+
+#### 3. Run the development server:
+
+```bash
+npm run dev
+```
+
+This will start the development server at `http://localhost:5173/`.
+
+### Usage
+
+1. Open the application in your web browser.
+2. Paste your raw JSON data into the input area.
+3. The formatted JSON will be displayed instantly.
+4. Use the "Copy to Clipboard" button to copy the formatted JSON.
+
+### Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests to help improve this project.
+
+### License
+
+This project is licensed under the MIT License.
+
